@@ -1,0 +1,49 @@
+body{
+	background: url('https://cdn.pixabay.com/photo/2020/03/31/11/59/sunrise-4987384_960_720.jpg') no-repeat fixed center;
+	-webkit-background-size: cover;
+		background-size: cover;	
+	/*margin: 0 auto;	*/
+}
+
+button{
+	display: block;
+}
+
+ul{
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+ul li button{
+	display: none;
+}
+li{
+	width: 50%;
+	/*float: left;*/
+	list-style: none;
+	margin-bottom: 50px;
+	background: #fff;
+}
+
+li img{
+	height: 320px;
+	width: auto
+}
+
+li.active{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+li.active button{
+	display: block;
+	align-self: flex-start;
+}
